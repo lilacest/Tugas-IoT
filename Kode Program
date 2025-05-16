@@ -1,0 +1,18 @@
+from gpio import *
+from time import *
+
+def main():
+    pinMode(0, IN)    # Pin 0: Motion Sensor (IoT0)
+    pinMode(1, OUT)   # Pin 1: Garage Door (IoT1)
+    pinMode(2, OUT)   # Pin 2: Lampu (IoT2)
+
+    while True:
+        if digitalRead(0) == HIGH:     # Deteksi gerakan
+            digitalWrite(1, HIGH)      # Buka pintu
+            digitalWrite(2, HIGH)      # Nyalakan lampu
+        else:
+            digitalWrite(1, LOW)       # Tutup pintu
+            digitalWrite(2, LOW)       # Matikan lampu
+
+if __name__ == "__main__":
+    main()
