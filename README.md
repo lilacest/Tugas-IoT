@@ -1,1 +1,3 @@
-# Tugas-IoT
+# Penjelasan Program
+
+Program ini dibuat untuk mengontrol sistem otomatisasi pintu garasi menggunakan sensor gerak dan lampu indikator berbasis mikrokontroler SBC. Dalam program ini, pin 0 dikonfigurasikan sebagai input untuk membaca sinyal dari sensor gerak, sedangkan pin 1 dan pin 2 sebagai output untuk mengendalikan pintu garasi dan lampu. Ketika sensor mendeteksi adanya gerakan (nilai HIGH), SBC akan mengaktifkan output pada pin 1 dan 2, yang menyebabkan pintu terbuka dan lampu menyala. Jika tidak ada gerakan terdeteksi (nilai LOW), maka sistem akan menonaktifkan kedua perangkat tersebut, menutup pintu dan mematikan lampu, sehingga menciptakan sistem yang responsif dan efisien terhadap aktivitas di sekitarnya.
